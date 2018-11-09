@@ -16,6 +16,11 @@ namespace Torutek.ModelValidation
 		public IEnumerable<string> Errors { get; set; }
 
 		/// <summary>
+		/// For deserializing
+		/// </summary>
+		public ErrorResponse() { }
+
+		/// <summary>
 		/// Constructor for single error message.
 		/// </summary>
 		/// <param name="error"></param>
