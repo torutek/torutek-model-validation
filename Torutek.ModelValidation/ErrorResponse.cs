@@ -37,7 +37,7 @@ namespace Torutek.ModelValidation
 		/// </summary>
 		/// <param name="error"></param>
 		/// <returns></returns>
-		public static IActionResult Result(string error)
+		public static BadRequestObjectResult Result(string error)
 		{
 			return new BadRequestObjectResult(new ErrorResponse(error));
 		}
@@ -47,7 +47,7 @@ namespace Torutek.ModelValidation
 		/// </summary>
 		/// <param name="errors"></param>
 		/// <returns></returns>
-		public static IActionResult Result(IEnumerable<string> errors)
+		public static BadRequestObjectResult Result(IEnumerable<string> errors)
 		{
 			return new BadRequestObjectResult(new ErrorResponse(errors));
 		}
