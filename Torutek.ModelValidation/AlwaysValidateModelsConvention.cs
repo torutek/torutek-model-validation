@@ -1,5 +1,5 @@
-﻿using System.Linq;
-using Microsoft.AspNetCore.Mvc.ApplicationModels;
+﻿using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using System.Linq;
 
 namespace Torutek.ModelValidation
 {
